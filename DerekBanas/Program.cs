@@ -158,6 +158,32 @@ namespace DerekBanas
                 Console.WriteLine(o);
             }
 
+            //stack , first in, last out
+
+            Stack stack = new Stack();
+            stack.Push(1);
+            stack.Push(2);
+            stack.Push(3);
+            Console.WriteLine("Peek 1 : {0}",
+                stack.Peek());
+            Console.WriteLine("Contain 1: {0}",
+                stack.Contains(1));
+
+            object[] numArray2 = stack.ToArray();
+
+            Console.WriteLine("****************");
+            
+            foreach(Object o in stack)
+            {
+                Console.WriteLine(o);
+            }
+            Console.WriteLine("****************");
+            foreach(object o in numArray2)
+            {
+                Console.WriteLine(o);
+            }
+
+
 
 
 
