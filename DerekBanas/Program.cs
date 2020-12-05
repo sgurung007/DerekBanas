@@ -2,6 +2,7 @@
 using DerekBanas.derekPolymorphism;
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace DerekBanas
 {
@@ -91,6 +92,48 @@ namespace DerekBanas
             {
                 Console.WriteLine(obj);
             }
+            ArrayList range = aList2.GetRange(0, 2);
+            Console.WriteLine("*************************");
+            foreach (Object obj in range)
+            {
+                Console.WriteLine(obj);
+            }
+
+            Console.WriteLine(range.IndexOf("suraj"));
+            string[] customers = { "Bob", "Sally", "Sue" };
+            ArrayList custArrayList = new ArrayList();
+
+            custArrayList.AddRange(customers);
+
+            foreach(string s in custArrayList)
+            {
+                Console.WriteLine(s);
+            }
+
+
+            //Dictionary
+            Dictionary<string, string> superheroes =
+                new Dictionary<string, string>();
+
+            superheroes.Add("pitam bahadur gurung","surperman");
+            superheroes.Add("laxmi prajapati", "wonder women");
+            superheroes.Add("suraj gurung", "gas man");
+
+            Console.WriteLine("***********************");
+
+            Console.WriteLine(" Count: {0}", superheroes.Count);
+
+            Console.WriteLine("pitam bahadur gurung: {0}",
+                superheroes.ContainsKey("pitam bahadur gurung"));
+
+            foreach(KeyValuePair<string,string> item in superheroes)
+            {
+                Console.WriteLine("{0}:{1}",
+                    item.Key,
+                    item.Value);
+            }
+
+
 
         }
     }
