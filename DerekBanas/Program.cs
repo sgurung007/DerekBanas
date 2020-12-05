@@ -8,6 +8,9 @@ namespace DerekBanas
 {
     class Program
     {
+        //this is fucking awesome 2020
+        //this is fucking awesome 2020
+        
         static void Main(string[] args)
         {
             Shape[] shapes = {new Circle(5),
@@ -132,6 +135,28 @@ namespace DerekBanas
                     item.Key,
                     item.Value);
             }
+
+            //Queue: first in firs out
+            Queue queue = new Queue();
+
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Dequeue();
+
+            foreach(object o in queue)
+            {
+                Console.WriteLine(o);
+            }
+
+            object[] numArray = queue.ToArray();
+
+            foreach (object o in numArray)
+            {
+                Console.WriteLine(o);
+            }
+
+
 
 
 
