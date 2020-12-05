@@ -133,6 +133,28 @@ namespace DerekBanas
                     item.Value);
             }
 
+            //Queue: first in firs out
+            Queue queue = new Queue();
+
+            queue.Enqueue(1);
+            queue.Enqueue(2);
+            queue.Enqueue(3);
+            queue.Dequeue();
+
+            foreach(object o in queue)
+            {
+                Console.WriteLine(o);
+            }
+
+            object[] numArray = queue.ToArray();
+
+            foreach (object o in numArray)
+            {
+                Console.WriteLine(o);
+            }
+
+
+
 
 
         }
