@@ -4,6 +4,7 @@ using System.Text;
 
 namespace DerekBanas.derekInterface
 {
+    //This is awesome
     class Vehicle : IDrivable
     {
         public string Brand { get; set; }
